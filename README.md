@@ -11,4 +11,4 @@ Run the 'yblog.py' to start the localhost.
 
 ## to-do
 * cleanup styling, change in-line css into an external css file
-* add multiple users authentication
+* add multiple users authentification
