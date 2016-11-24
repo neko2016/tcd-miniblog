@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>MiniBlog</h1>
+<h2>A seedbed for wonderful ideas</h1>
+
+
+<h1 style="text-align:left;">Start blogging</h1>
+<form method="post" action="{{ url_for('loading')}}">
+    <p><label>Title</label> <input type="text" name="title" required  class="form-control"></p>
+    <p><label>Description</label> <textarea name="description" required class="form-control"></textarea></p>
+    <p><button type="submit" class="btn btn-success">Post</button></p>
+</form>
+
+
+<h1 style="text-align:left;">Previous posts</h1>
+{% for post in posts %}
+<div class="panel panel-success">
+  <div class="panel panel-heading" style="margin:0px; padding:10px"> <strong class="font-serif">Title : </strong>{{ post.title }}</div>
+  <div class="panel panel-body" style="margin:0px; padding:10px"> <strong class="font-serif">Content : </strong> {{ post.description }}</div>
+</div>
+{% endfor %}
+
+<p class="text_centering" style="margin:20px auto 10px">Click&nbsp;<a href="/logout">here</a>&nbsp;to logout.</p>
+
+{% endblock %}

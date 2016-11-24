@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="text-center">Please Login</h1>
+<br>
+<div >
+<form action="" method="post"  class="col-md-6 col-md-offset-3">
+  <input type="text" placeholder="Username" name="username" class="form-control" style="margin:5px" value="{{request.form.username }}" >
+  <input type="password" placeholder="Password" name="password" class="form-control" style="margin:5px"  value="{{request.form.password }}">
+  <button type="submit" class="btn btn-success col-md-12" style="margin:5px;">Login</button>
+</form>
+</div>
+
+{% endblock %}

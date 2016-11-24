@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="text_centering" style="margin:20px;">Your Entries</h1>
+    {% for post in posts %}
+    <div class="panel panel-success">
+        <div class="panel panel-heading" style="margin:0px; padding:10px"> <strong class="font-serif">Title : </strong>{{ post.title }}</div>
+        <div class="panel panel-body" style="margin:0px; padding:10px"> <strong class="font-serif">Content : </strong> {{ post.description }}</div>
+    </div>
+    {% endfor %}
+    <p class="text_centering" style="margin:20px auto"> Back to <a href="{{ url_for('index') }}"> Homepage</a></p>
+    <p class="text_centering" style="margin:0px auto 20px">Click&nbsp;<a href="/logout">here</a>&nbsp;to logout.</p>
+{% endblock %}
