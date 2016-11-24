@@ -1,4 +1,4 @@
-### tcd-miniblog
+## tcd-miniblog
 
 This blog is made with Python Flask, SQLite and Jinja templates.
 
@@ -8,6 +8,7 @@ The github repo doesn't contain local database.
 
 Run the 'yblog.py' to start the localhost.
 
-### to-do
+
+## to-do
 * cleanup styling, change in-line css into a separate css file
 * add multiple users authentication
