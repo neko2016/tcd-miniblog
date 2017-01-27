@@ -1,4 +1,4 @@
-# IDM CS7025, Simple Blog built with Flask, Ying Feng (15331988)
+# IDM CS7025, Simple Blog built with Flask
 # login credentials - username: admin, password: admin
 
 from flask import Flask, request, session, g, redirect, url_for, render_template, flash
